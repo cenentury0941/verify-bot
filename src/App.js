@@ -13,8 +13,8 @@ function App() {
 
       <BrowserRouter>
       <Routes>
-          <Route index element={<Home />} />
-          <Route path="tutorial" element={<Tutorial />} />
+          <Route path="/verifybot" element={<Home />} />
+          <Route path="/verifybot/tutorial" element={<Tutorial />} />
       </Routes>
         <VerifyBot />
       </BrowserRouter>

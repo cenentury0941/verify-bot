@@ -326,7 +326,7 @@ function VerifyBot()
                 {
                     var mess = await translateGPT(tutorial);
                     setMessages( arr => [ { source : "Bot" , message : mess } , ...arr ] )
-                    navigate( "/tutorial");
+                    navigate( "/verifybot/tutorial");
                 }
                 else if( chat_response.includes("3") )
                 {
