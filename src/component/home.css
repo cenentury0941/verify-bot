@@ -1,0 +1,141 @@
+.Scroller{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    position: relative;
+}
+
+.Container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.Container > h1{
+    font-size: 15vh;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    text-shadow: 5px 5px #39393939;
+}
+
+
+.Container > h2{
+    font-size: 4vh;
+    position: absolute;
+    top: 28vh;
+    left: 10vw;
+    text-shadow: 5px 5px #39393939;
+    text-align: center;
+}
+
+.Start{
+    background-image: url("./images/mainBg.png");
+    background-position: end;
+    background-size: cover;
+}
+
+.Blank{
+    background-color: white;
+}
+
+.Invoke{    
+    background-image: url("./images/Invoke.png");
+    background-size: contain;
+}
+
+.Provide{    
+    background-image: url("./images/Provide.png");
+    background-size: contain;
+}
+
+.Verify{    
+    background-image: url("./images/Verify.png");
+    background-size: contain;
+}
+
+.Reverse{
+    background-image: linear-gradient( to right , #d18cff , #822bce  ); 
+}
+
+.About{
+    background-image: url("./images/About.png");
+    background-size: contain;
+    background-color: white;
+}
+
+.Features{
+    background-image: url("./images/Accessibility.png");
+    background-size: contain;
+}
+
+.Tutorial{
+    background-image: url("./images/Tutorial.png");
+    background-size: contain;
+}
+
+.Feature1{
+    background-image: url("./images/feature1.png");
+    background-size: contain;
+}
+
+.Feature2{
+    background-image: url("./images/feature2.png");
+    background-size: contain;
+}
+
+.Feature3{
+    background-image: url("./images/feature3.png");
+    background-size: contain;
+}
+
+.Tutorial2{
+    background-image: url("./images/Tutorial02.png");
+    background-size: contain;
+}
+
+.Working{
+    background-image: url("./images/Working.png");
+    background-size: contain;
+}
+
+
+.Install{
+    background-image: url("./images/InstallBG.png");
+    background-position: top;
+    background-size: cover;
+}
+
+.CheckOutMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 3vh;
+    right: 2vw;
+    width: 10vw;
+    min-width: 9cm;
+    aspect-ratio: 0.6;
+    border-radius: 3vh;
+    transform-origin: center;
+    border: 5px dashed #822bce;
+    background-image: url("./images/check.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: scale(0.85);
+    background-color: white;
+}
